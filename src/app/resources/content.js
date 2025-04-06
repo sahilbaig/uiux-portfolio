@@ -1,18 +1,30 @@
-import { InlineCode } from "@/once-ui/components";
+import { Button, InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Shilpa",
+  lastName: "Rajak",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Senior UI/UX designer",
+  avatar: "/images/flicks-port.jpeg",
+  // location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: [], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
+  display: true,
+  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  description: (
+    <>
+      I occasionally write about design, technology, and share thoughts on the intersection of
+      creativity and engineering.
+    </>
+  ),
+};
+
+const contact = {
+  label: "Contact",
   display: true,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
@@ -27,14 +39,9 @@ const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
-  },
-  {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/shilpa-rajak-64663a108/",
   },
   {
     name: "X",
@@ -55,8 +62,9 @@ const home = {
   headline: <>Design engineer and builder</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Shilpa, a design engineer at <InlineCode>PlaySimpleGames</InlineCode>, where I craft intuitive
+      <br /> user experiences.
+      {/* <Button>Download resume? / Contact Me </Button> */}
     </>
   ),
 };
@@ -81,6 +89,9 @@ const about = {
     title: "Introduction",
     description: (
       <>
+        <> What I am . A simple simple intro and big words writtten in 3 lines .</>
+        <br></br>
+        Example:
         Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
         into simple, elegant design solutions. Her work spans digital interfaces, interactive
         experiences, and the convergence of design and technology.
@@ -92,8 +103,8 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
+        company: "PlaySimpleGames",
+        timeframe: "2020 - Present",
         role: "Senior Design Engineer",
         achievements: [
           <>
@@ -116,17 +127,23 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "21North Europ Assistance",
+        timeframe: "2018 - 2020",
+        role: "User Experience Designer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            I Did some stuff I dont remember
           </>,
+        ],
+        images: [],
+      },
+      {
+        company: "21North Europ Assistance",
+        timeframe: "2018 - 2020",
+        role: "User Experience Designer",
+        achievements: [
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            I Did some more stuff I dont  want to remember . Images can be added here
           </>,
         ],
         images: [],
@@ -135,15 +152,11 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
+        name: "National Institute of Technology Durgapur",
         description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
       },
     ],
   },
@@ -282,4 +295,4 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, blog, work, gallery, contact };
