@@ -142,7 +142,7 @@ export const Header = () => {
                 <>
                   <ToggleButton
                     className="s-flex-hide"
-                    prefixIcon="person"
+                    prefixIcon="contact"
                     href="/contact"
                     label={contact.label}
                     selected={pathname === "/contact"}
