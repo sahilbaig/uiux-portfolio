@@ -17,18 +17,30 @@ const protectedRoutes = {
 };
 
 
+// const style = {
+//   theme: "dark",
+//   brand: "blue",
+//   accent: "indigo",
+//   neutral: "gray",
+//   border: "playful",
+//   solid: "contrast",
+//   solid: "flat",
+//   surface: "filled",
+//   transition: "all",
+// }
+
+
 const style = {
-  theme: "dark",
-  brand: "blue",
+  theme: "light",
+  brand: "violet",
   accent: "indigo",
-  neutral: "gray",
+  neutral: "slate",
   border: "playful",
   solid: "contrast",
   solid: "flat",
   surface: "filled",
   transition: "all",
 }
-
 const effects = {
   mask: {
     cursor: true,
