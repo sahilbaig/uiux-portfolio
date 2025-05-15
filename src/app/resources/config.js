@@ -14,6 +14,7 @@ const routes = {
 const protectedRoutes = {
   "/work/automate-design-handovers-with-a-figma-to-code-pipeline": true,
   "/work/password-protect": true,
+  "/work/driver-onbaord/case-study.pdf" : true,
 };
 
 
