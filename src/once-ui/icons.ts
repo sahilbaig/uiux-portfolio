@@ -31,6 +31,7 @@ import {
   PiGridFourDuotone,
   PiBookBookmarkDuotone,
   PiImageDuotone,
+  PiBehanceLogoThin,
 } from "react-icons/pi";
 
 import {
@@ -39,7 +40,11 @@ import {
   FaLinkedin,
   FaXTwitter,
   FaAddressCard,
+  FaBehance,
 } from "react-icons/fa6";
+import { PiPhone } from "react-icons/pi";
+import { FaMessage } from "react-icons/fa6";
+import { PiInstagramLogo } from "react-icons/pi";
 
 export const iconLibrary: Record<string, IconType> = {
   chevronUp: HiChevronUp,
@@ -74,4 +79,8 @@ export const iconLibrary: Record<string, IconType> = {
   clipboard: HiClipboard,
   arrowUpRightFromSquare: HiArrowTopRightOnSquare,
   contact: FaAddressCard,
+  phone: PiPhone,
+  message: FaMessage,
+  instagram: PiInstagramLogo,
+  behance: FaBehance,
 };
